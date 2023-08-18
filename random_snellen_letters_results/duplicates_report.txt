@@ -1,0 +1,4 @@
+DUPLICATE LINES REPORT
+=========================
+
+Well, would ya look at that, the random function works. No duplicate lines were found.

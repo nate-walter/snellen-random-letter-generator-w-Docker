@@ -2,6 +2,7 @@ import os
 import requests
 import random
 from datetime import datetime 
+from duplicates import check_for_duplicates
 
 LETTERS = 'EFPTOZLDC'
 RESULTS_DIR = "./random_snellen_letters_results"

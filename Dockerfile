@@ -22,4 +22,4 @@ RUN chown -R myuser:myuser /app
 USER myuser
 
 # Run the Python application
-CMD ["python", "main.py"]
+CMD ["python3", "main.py"]

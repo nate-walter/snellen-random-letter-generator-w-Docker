@@ -2,6 +2,7 @@ import os
 import requests
 import random
 from datetime import datetime
+from duplicates import check_for_duplicates
 
 LETTERS = 'EFPTOZLDC'
 RESULTS_DIR = "/app/random_snellen_letters_results" # Uncomment this to run in Docker container
@@ -36,9 +37,10 @@ def write_combinations_to_file(combinations):
             file.write(combination + "\n")
 
 if __name__ == '__main__':
-    random_combinations = generate_random_combinations(7, 10)  # Generate 10 combinations of length 7
+    random_combinations = generate_random_combinations(7, 40)  # Generate 40 combinations of length 7
     
     if random_combinations:
         write_combinations_to_file(random_combinations)
+        check_for_duplicates(RESULTS_DIR)
     else:
         print("No combinations generated.")
