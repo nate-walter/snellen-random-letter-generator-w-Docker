@@ -1,8 +1,17 @@
 DUPLICATE LINES REPORT
 =========================
 
+Line 'CPZFDTL' found in files: results_20230818141515.txt, results_20230818182141.txt
+Line 'DPEFTLC' found in files: results_20230818141553.txt, results_20230818182141.txt
 Line 'LZTODFP' found in files: results_20230818175343.txt, results_20230818181257.txt
 Line 'EFZDTOL' found in files: results_20230818181134.txt, results_20230818181257.txt
+Line 'DEZLPFC' found in files: results_20230818181134.txt, results_20230818182141.txt
 Line 'EOCLFPZ' found in files: results_20230818181442.txt, results_20230818181442.txt
+Line 'OTDZLPE' found in files: results_20230818181442.txt, results_20230818182141.txt
 Line 'CFDTLEZ' found in files: results_20230818181621.txt, results_20230818181621.txt
+Line 'TDCZOEL' found in files: results_20230818181621.txt, results_20230818182141.txt
+Line 'LZTCFOP' found in files: results_20230818181621.txt, results_20230818182141.txt
+Line 'LOZFEPT' found in files: results_20230818181621.txt, results_20230818182141.txt
 Line 'CFOTPZL' found in files: results_20230818181735.txt, results_20230818181735.txt
+Line 'OZDCPET' found in files: results_20230818181735.txt, results_20230818182141.txt
+Line 'DCPOEZF' found in files: results_20230818181735.txt, results_20230818182141.txt
