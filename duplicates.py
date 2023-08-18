@@ -19,7 +19,7 @@ def check_for_duplicates(RESULTS_DIR):
     report = "DUPLICATE LINES REPORT\n" + "="*25 + "\n\n"
 
     if not duplicates:
-        report += "Well, would ya look at that, the random function works. No duplicate lines were found.\n"
+        report += "Well, would ya look at that, the random function works. No duplicate lines were.\n"
     else:
         for line, files in duplicates.items():
             report += f"Line '{line}' found in files: {', '.join(files)}\n"

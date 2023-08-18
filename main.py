@@ -35,6 +35,8 @@ def write_combinations_to_file(combinations):
     with open(file_path, 'w') as file:
         for combination in random_combinations:
             file.write(combination + "\n")
+        #  # Add a duplicate on purpose
+        # file.write(random_combinations[0] + '\n')  # test that duplicates_report works
 
 if __name__ == '__main__':
     random_combinations = generate_random_combinations(7, 40)  # Generate 40 combinations of length 7
