@@ -40,5 +40,6 @@ def write_combinations_to_file(combinations):
 
 #     if random_combinations:
 #         write_combinations_to_file(random_combinations)
+#         check_for_duplicates(RESULTS_DIR)
 #     else:
 #         print("No combinations generated.")
