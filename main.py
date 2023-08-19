@@ -16,7 +16,7 @@ def generate_random_combination(length, existing_combinations):
             if next_letter != combination[-1]:  # Ensure no consecutive repeats
                 combination += next_letter
             
-        if combination in existing_combinations:
+        if combination not in existing_combinations:
                 return combination
 
 def generate_random_combinations(length, count):
