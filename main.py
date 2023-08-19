@@ -8,16 +8,16 @@ RESULTS_DIR = "/app/random_snellen_letters_results"
 
 def generate_random_combination(length, existing_combinations):
     while True: # This outer loop ensures we keep generating until we find a unique combination.
-    combination = random.choice(LETTERS)
+        combination = random.choice(LETTERS)
     
-    while len(combination) < length:
-        next_letter = random.choice(LETTERS)
-        
-        if next_letter != combination[-1]:  # Ensure no consecutive repeats
-            combination += next_letter
-        
+        while len(combination) < length:
+            next_letter = random.choice(LETTERS)
+            
+            if next_letter != combination[-1]:  # Ensure no consecutive repeats
+                combination += next_letter
+            
         if combination in existing_combinations:
-            return combination
+                return combination
 
 def generate_random_combinations(length, count):
     combinations = set()
