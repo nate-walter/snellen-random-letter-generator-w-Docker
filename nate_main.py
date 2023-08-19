@@ -8,18 +8,29 @@
 # RESULTS_DIR = "/app/random_snellen_letters_results" # Uncomment this to run in Docker container
 # # RESULTS_DIR = "random_snellen_letters_results" # Uncomment to run in terminal
 
-# def generate_random_combinations(length, count):
+# def generate_random_combination(length):
 #     api_key = os.getenv('RANDOM_ORG_API_KEY')  # Just noting that this isn't used in your current code
+#     combination = random.choice(LETTERS)
+
+#     while len(combination) < length:
+#         next_letter = random.choice(LETTERS)
+
+#         if next letter != combination[-1]: # Ensure no consecutive repeats
+#             combination += next_letter
     
-#     combinations = []
+#     return combination
+
+# def generate_random_combinations(length, count):
+#     combinations = set()
+
 #     while len(combinations) < count:
-#         random_indices = random.sample(range(len(LETTERS)), length)
-#         combination = ''.join(LETTERS[i] for i in random_indices)
-        
+#         combination = generate_random_combination(length)
+
 #         if combination not in combinations:
-#             combinations.append(combination)
-    
-#     return combinations
+#             combination.add(combination)
+#     r
+#     return list(combinations)
+
 
 # def write_combinations_to_file(combinations):
 #     # Ensure the directory exists
@@ -35,8 +46,9 @@
 #     with open(file_path, 'w') as file:
 #         for combination in random_combinations:
 #             file.write(combination + "\n")
-        #  # Add a duplicate on purpose
-        # file.write(random_combinations[0] + '\n') # test that duplicates_report works
+         
+#         # Add a duplicate on purpose
+#         file.write(random_combinations[0] + '\n') # test that duplicates_report works
 
 # if __name__ == '__main__':
 #     random_combinations = generate_random_combinations(7, 40)  # Generate 40 combinations of length 7

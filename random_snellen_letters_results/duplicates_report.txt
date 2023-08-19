@@ -15,3 +15,10 @@ Line 'LOZFEPT' found in files: results_20230818181621.txt, results_2023081818214
 Line 'CFOTPZL' found in files: results_20230818181735.txt, results_20230818181735.txt
 Line 'OZDCPET' found in files: results_20230818181735.txt, results_20230818182141.txt
 Line 'DCPOEZF' found in files: results_20230818181735.txt, results_20230818182141.txt
+Line 'FTLZDPE' found in files: results_20230818182141.txt, results_20230819023038.txt
+Line 'ELCFODZ' found in files: results_20230818182141.txt, results_20230819023136.txt
+Line 'ZFODCLP' found in files: results_20230818182141.txt, results_20230819023020.txt
+Line 'ODELZCT' found in files: results_20230818182141.txt, results_20230819023106.txt
+Line 'OTDZPEL' found in files: results_20230818182141.txt, results_20230819023136.txt
+Line 'ZPOELTC' found in files: results_20230818182141.txt, results_20230819023020.txt
+Line 'TDCEZFP' found in files: results_20230818182141.txt, results_20230819023038.txt
