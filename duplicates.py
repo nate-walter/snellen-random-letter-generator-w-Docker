@@ -1,6 +1,6 @@
 import os
 
-RESULTS_DIR = "/app/random_snellen_letters_results"
+RESULTS_DIR = "/app/random_snellen_above_0.7142"
 
 def check_for_duplicates(RESULTS_DIR):
     print("checking for duplicates..")
