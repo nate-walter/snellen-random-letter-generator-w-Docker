@@ -23,15 +23,30 @@ def extend_combination(combo, final_length):
     
     while len(combo) < final_length:
         to_add = random.choice(missing_letters)
-        insert_pos = random.randint(0, len(combo))
-        combo = combo[:insert_pos] + to_add + combo[insert_pos:]
         
-        if combo.count(to_add) >= 2:
-            missing_letters.remove(to_add)
+        # Check for consecutive repeats
+        valid_positions = [i for i, c in enumerate(combo) if i == 0 or (combo[i-1] != to_add and (i == len(combo) - 1 or combo[i] != to_add))]
+        
+        if not valid_positions:
+            continue  # Skip to the next iteration if no valid position is found for the current letter
+
+        insert_pos = random.choice(valid_positions)
+        
+        # Insert the letter at the valid position
+        combo = combo[:insert_pos] + to_add + combo[insert_pos:]
+
+        # Now we must also check the newly formed combo for consecutive repeats.
+        has_consecutive_repeats = any(combo[i] == combo[i+1] for i in range(len(combo) - 1))
+
+        if not has_consecutive_repeats:
+            if combo.count(to_add) >= 2:
+                missing_letters.remove(to_add)
+        else:
+            # Revert the addition if it led to consecutive repeats
+            combo = combo[:insert_pos] + combo[insert_pos+1:]
     
-    combo_list = list(combo)
-    random.shuffle(combo_list)
-    return ''.join(combo_list)
+    return combo
+
 
 def write_combinations_to_file(combinations):
     if not os.path.exists(RESULTS_DIR):
@@ -54,7 +69,7 @@ if __name__ == '__main__':
             final_combinations.add(combo)
         else:
             extended_combo = extend_combination(combo, 7)
-            if letter_diversity(extended_combo) >= 0.7143:
+            if letter_diversity(extended_combo) >= 0.7143 and len(extended_combo) == 7:
                 final_combinations.add(extended_combo)
 
     print(f"Number of initial combinations: {len(initial_combinations)}")
