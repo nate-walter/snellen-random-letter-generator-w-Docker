@@ -52,10 +52,10 @@ if __name__ == '__main__':
     for combo in initial_combinations:
         if len(combo) == 7:  # If the initial combination is already 7 letters long
             final_combinations.add(combo)
-    else:
-        extended_combo = extend_combination(combo, 7)
-        if letter_diversity(extended_combo) >= 0.7143:
-            final_combinations.add(extended_combo)
+        else:
+            extended_combo = extend_combination(combo, 7)
+            if letter_diversity(extended_combo) >= 0.7143:
+                final_combinations.add(extended_combo)
 
     print(f"Number of initial combinations: {len(initial_combinations)}")
     print(f"Number of final combinations: {len(final_combinations)}")
