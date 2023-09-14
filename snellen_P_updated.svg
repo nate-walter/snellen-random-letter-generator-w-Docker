@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<svg baseProfile="tiny" height="100" version="1.2" width="100" xmlns="http://www.w3.org/2000/svg" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xlink="http://www.w3.org/1999/xlink"><defs /><line stroke="rgb(0,0,0)" stroke-width="10" x1="30" x2="30" y1="10" y2="90" /><line stroke="rgb(0,0,0)" stroke-width="10" x1="30" x2="70" y1="10" y2="10" /><path d="M 70 10 A 40 40 0 0 1 70 50 L 30 50 Z" fill="#000" /></svg>
